@@ -62,12 +62,12 @@ Scrutineering Status Generator
 				{% assign ttwhite = ttwhite | push:tooltips[forloop.index0] %}
 			{% endif %}
 		{% endfor %}
-		<td style="--size: calc({{greens}} / 10);"><span class="data"> {{greens}}  </span><span class="tooltip">{% for title in ttgreen %} {{title}};&nbsp;&nbsp;{% endfor %}</span></td>
-		<td style="--size: calc({{blues}} / 10);"><span class="data"> {{blues}} </span><span class="tooltip">{% for title in ttblue %} {{title}};  {% endfor %}</span></td>
-		<td style="--size: calc({{yellows}} / 10);"><span class="data"> {{yellows}} </span><span class="tooltip">{% for title in ttyellow %} {{title}}; {% endfor %}</span></td>
-		<td style="--size: calc({{reds}} / 10);"><span class="data"> {{reds}} </span><span class="tooltip">{% for title in ttred %} {{title}}; {% endfor %}</span></td>
-		<td style="--size: calc({{whites}} / 10);"><span class="data"> {{whites}} </span><span class="tooltip">{% for title in ttwhite %} {{title}}; {% endfor %}</span></td>
-		<td style="--size: calc({{greys}} / 10);"><span class="data"> {{greys}} </span><span class="tooltip">{% for title in ttgrey %} {{title}}; {% endfor %}</span></td>
+		<td style="--size: calc({{greens}} / 10);"><span class="data"> {{greens}}  </span><span class="tooltip">{% for title in ttgreen %} {{title}}<br>{% endfor %}</span></td>
+		<td style="--size: calc({{blues}} / 10);"><span class="data"> {{blues}} </span><span class="tooltip">{% for title in ttblue %} {{title}}<br>{% endfor %}</span></td>
+		<td style="--size: calc({{yellows}} / 10);"><span class="data"> {{yellows}} </span><span class="tooltip">{% for title in ttyellow %} {{title}}<br>{% endfor %}</span></td>
+		<td style="--size: calc({{reds}} / 10);"><span class="data"> {{reds}} </span><span class="tooltip">{% for title in ttred %} {{title}}<br>{% endfor %}</span></td>
+		<td style="--size: calc({{whites}} / 10);"><span class="data"> {{whites}} </span><span class="tooltip">{% for title in ttwhite %} {{title}}<br>{% endfor %}</span></td>
+		<td style="--size: calc({{greys}} / 10);"><span class="data"> {{greys}} </span><span class="tooltip">{% for title in ttgrey %} {{title}}<br>{% endfor %}</span></td>
 		</tr>
 	{% endif %}
   {% endfor %}
