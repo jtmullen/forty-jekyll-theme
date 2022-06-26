@@ -1,0 +1,28 @@
+{% comment %}
+FSGP Lap Chart Generator
+{% endcomment %}{% assign class = include.class %}
+{%if class != "SOV" or class != "MOV" %} <i>Error generating Chart</i>
+{% else %}
+{% assign most_laps = 0 %}
+{% for team in site.data.fsgp.[class] %}
+	{% if team.team != "labels" %}
+		{% assign lapCount = 0 %}
+		{% for item in team offset:2 %}
+			{% lapCount = lapCount | plus:item[0] %}
+		{% endfor %}
+		{% if lapCount > most_laps %}
+			{% assign most_laps = lapCount %}
+		{% endif %}
+	{% endif %}
+{% endfor %}
+
+Most Laps is: {{most_laps}}
+{% comment %}
+<link rel='stylesheet' href='assets/css/charts.min.css'><link rel="stylesheet" href="assets/css/fsgp-style.css"><div id="legend-example-2">
+<table id="line-chart-sov" class="charts-css line multiple hide-data show-heading show-labels show-primary-axis show-data-axes show-10-secondary-axes">
+  <caption> {{ class }} Lap Counts </caption>
+  <thead><tr>
+{% endcomment %}
+  
+  
+{% endif %}

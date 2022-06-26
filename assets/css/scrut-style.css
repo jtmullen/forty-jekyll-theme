@@ -2,14 +2,15 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
-  margin: 0;
+  margin: auto;
+  max-width: 1000px;
 }
 
 
 #stacked-example-2 {
-  height: 250px;
+  height: 450px;
   padding-right: 10px;
-  max-width: 610px;
+  max-width: 900px;
   margin: 0 auto;
   justify-content: flex-end;
   white-space: nowrap;

@@ -1,0 +1,10 @@
+team,number,penalty,fastest,1,2,3,4,5,6
+labels,,,,,Day 1,,Day 2,,Final
+Kentucky,3,0,5m 11s,0,5,0,5,0,5
+MIT,4,0,4m 10s,20,10,5,4,3,2
+Minnesota,35,0,3m 9s,1,2,3,4,5,6
+Illinois,22,0,3m 22s,11,12,13,14,15,16
+team,99,4,5m 55s,9,8,7,6,5,4
+team,999,5,1m 11s,1,1,1,1,1,1
+longer name,123,0,n/a,0,0,0,0,0,0
+team,25,7,1m 55s,0,0,0,0,0,20
